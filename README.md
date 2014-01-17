@@ -55,6 +55,11 @@ You need Node-Webkit and Windows to run this.
 - Open command prompt to node-webkit
 - Run using the command: nw edge-test-app
 
+###Author
+
+Frank Hale <frankhale@gmail.com>
+16 January 2014
+
 ###License 
 
 GPL version 3, see LICENSE file for details
