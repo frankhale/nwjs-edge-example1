@@ -59,7 +59,7 @@ You need Node-Webkit and Windows to run this.
 
 ###Author
 
-Frank Hale <frankhale@gmail.com>
+Frank Hale &lt;frankhale@gmail.com&gt;  
 16 January 2014
 
 ###License 
