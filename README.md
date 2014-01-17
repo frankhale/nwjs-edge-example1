@@ -2,6 +2,8 @@
 
 An example usage of Node-Webkit and EdgeJS. This code calls a function inside a .NET class library. I've included everything (except Node-Webkit) so this example code should work out of the box.
 
+<img src="https://github.com/frankhale/nw-edge-example/blob/master/edge-test.png?raw=true" alt="screenshot"/>
+
 ###Note (If you want to build your own Edge.JS)
 
 Edge.JS had to be rebuilt using nw-gyp in order for it to work from within Node-Webkit.
