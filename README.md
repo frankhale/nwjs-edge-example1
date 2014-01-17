@@ -6,16 +6,16 @@ An example usage of Node-Webkit and EdgeJS. This code calls a function inside a 
 
 ###Note (If you want to build your own Edge.JS)
 
-Edge.JS had to be rebuilt using nw-gyp in order for it to work from within Node-Webkit.
+Edge.JS has to be rebuilt using nw-gyp in order for it to work from within Node-Webkit. By default Edge.JS is built using node-gyp and only works within Node.JS.
 
 Things you need in order to build Edge.JS yourself:
 
-- Windows
+- Windows (obviously, LOL!)
 - Windows 7.1 SDK
-- Visual C++ 2010 Express
+- Visual C++ 2010 Express (or any of the paid for versions)
 - Python 2.7.x
-- Node.JS
-- nw-gyp (node module)
+- Node.JS (I use the x86 version since Node-Webkit is 32bit on Windows).
+- nw-gyp (node module needed for configuring the build and building)
 
 Next, open a command prompt to your source code directory and install the Edge.JS module using npm:
 
