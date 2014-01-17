@@ -4,6 +4,17 @@ An example usage of Node-Webkit and EdgeJS. This code calls a function inside a 
 
 <img src="https://github.com/frankhale/nw-edge-example/blob/master/edge-test.png?raw=true" alt="screenshot"/>
 
+###Usage
+
+You need Node-Webkit and Windows to run this.
+
+- Clone or download a zip of this repository
+- Unzip into it's own folder (assuming folder named edge-test-app)
+- Unzip node-webkit
+- Copy edge-test-app folder to node-webkit folder
+- Open command prompt to node-webkit
+- Run using the command: nw edge-test-app
+
 ###Note (If you want to build your own Edge.JS)
 
 Edge.JS has to be rebuilt using nw-gyp in order for it to work from within Node-Webkit. By default Edge.JS is built using node-gyp and only works within Node.JS.
@@ -45,17 +56,6 @@ Copy edge.node to:
 ```
 c:\my-app\node_modules\edge\lib\native\win32\ia32\0.10.0
 ```
-
-###Usage
-
-You need Node-Webkit and Windows to run this.
-
-- Clone or download a zip of this repository
-- Unzip into it's own folder (assuming folder named edge-test-app)
-- Unzip node-webkit
-- Copy edge-test-app folder to node-webkit folder
-- Open command prompt to node-webkit
-- Run using the command: nw edge-test-app
 
 ###Author
 
