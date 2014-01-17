@@ -1,6 +1,6 @@
 #nw-edge-example
 
-An example usage of Node-Webkit and EdgeJS
+An example usage of Node-Webkit and EdgeJS. This code calls a function inside a .NET class library. 
 
 ###Usage
 
