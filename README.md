@@ -15,7 +15,15 @@ You need Node-Webkit and Windows to run this.
 - Open command prompt to node-webkit
 - Run using the command: nw edge-test-app
 
-###Note (If you want to build your own Edge.JS)
+###C# Class Library
+
+The SimpleLibrary.dll is built from the Hello.cs source file. I've omitted the Visual Studio project to build this from this repository. This library only contains one function as noted in the Hello.cs. Notice the function signature is special because by default Edge.JS wants to call asynchronous methods so it does not block the Javascript engine. 
+
+If you want to see more examples of using Edge.JS please see it's Github repository located at:
+
+https://github.com/tjanczuk/edge
+
+###Building Your Own Edge.JS
 
 Edge.JS has to be rebuilt using nw-gyp in order for it to work from within Node-Webkit. By default Edge.JS is built using node-gyp and only works within Node.JS.
 
