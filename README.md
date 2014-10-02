@@ -1,3 +1,5 @@
+##NOTE: Unfortunately Edge does not compile against the version of Node that ships with the latest version of Node-Webkit. New versions of NW ship with Node 0.11.x. Edge only compiles against 0.10.x and earlier versions of Node which is why NW 0.8.6 is the last version that will work.
+
 #nw-edge-example
 
 An example usage of Node-Webkit and EdgeJS. This code calls a function inside a .NET class library. I've included everything (except Node-Webkit) so this example code should work out of the box.
