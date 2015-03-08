@@ -15,6 +15,9 @@ You need Node-Webkit and Windows to run this.
 - Open command prompt to node-webkit
 - Run using the command: nw edge-test-app
 
+NOTE: The Edge node module is included in the repo on purpose. If you are running x64 Windows you won't
+need to run any of the compile instructions below.
+
 ###C# Class Library
 
 The SimpleLibrary.dll is built from the Hello.cs source file. I've omitted the Visual Studio project to build this from this repository. This library only contains one function as noted in the Hello.cs. Notice the function signature is special because by default Edge.JS wants to call asynchronous methods so it does not block the Javascript engine. 
