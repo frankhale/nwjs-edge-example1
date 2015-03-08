@@ -1,5 +1,3 @@
-##NOTE: Unfortunately Edge does not compile against the version of Node that ships with the latest version of Node-Webkit. New versions of NW ship with Node 0.11.x. Edge only compiles against 0.10.x and earlier versions of Node which is why NW 0.8.6 is the last version that will work.
-
 #nw-edge-example
 
 An example usage of Node-Webkit and EdgeJS. This code calls a function inside a .NET class library. I've included everything (except Node-Webkit) so this example code should work out of the box.
@@ -31,12 +29,10 @@ Edge.JS has to be rebuilt using nw-gyp in order for it to work from within Node-
 
 Things you need in order to build Edge.JS yourself:
 
-- Windows (obviously, LOL!)
-- Windows 7.1 SDK
-- Visual C++ 2010 Express (or any of the paid for versions)
+- Visual Studio 2013
 - Python 2.7.x
-- Node.JS (I use the x86 version since Node-Webkit is 32bit on Windows).
-- nw-gyp (node module needed for configuring the build and building)
+- Node.JS 
+- nw-gyp (npm install -g nw-gyp)
 
 Next, open a command prompt to your source code directory and install the Edge.JS module using npm:
 
@@ -47,11 +43,11 @@ c:\my-app>npm install edge
 
 This will create a node-modules folder and then install edge into that folder. Now we need to recompile Edge using nw-gyp (instead of node-gyp which it is built with by default).
 
-(assuming Node-Webkit 0.8.4 is the target version of Node-Webkit)
+(assuming Node-Webkit 0.12.0 is the target version of Node-Webkit)
 
 ```
 c:\my-app\>cd node_modules\edge
-c:\my-app\node_modules\edge>nw-gyp configure --target=v0.8.4
+c:\my-app\node_modules\edge>nw-gyp configure --target=v0.12.0 --msvs_version=2013
 c:\my-app\node_modules\edge>nw-gyp build
 ```
 
@@ -61,16 +57,16 @@ Once the build finishes, the new module will be in:
 c:\my-app\node_modules\edge\build\Release
 ```
 
-Copy edge.node to:
+Copy edge.node to: (depending on your architecture, I'm building against x64)
 
 ```
-c:\my-app\node_modules\edge\lib\native\win32\ia32\0.10.0
+c:\my-app\node_modules\edge\lib\native\win32\x64\0.12.0
 ```
 
 ###Author
 
 Frank Hale &lt;frankhale@gmail.com&gt;  
-16 January 2014
+7 March 2015
 
 ###License 
 
