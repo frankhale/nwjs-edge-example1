@@ -66,6 +66,14 @@ Copy edge.node to: (depending on your architecture, I'm building against x64)
 c:\my-app\node_modules\edge\lib\native\win32\x64\0.12.0
 ```
 
+Additionally, you will likely need to edit the versionMap in node_modules\edge\lib\edge.js
+
+Add the following line: (update as necessary, currently Node 0.12 is being reported as Node 0.1.2 to Edges versiond detection function.
+
+```
+[ /1.2.0/, '0.12.0' ]
+```
+
 ###Author
 
 Frank Hale &lt;frankhale@gmail.com&gt;  
