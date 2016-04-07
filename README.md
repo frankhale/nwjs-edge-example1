@@ -1,19 +1,20 @@
 #nw-edge-example
 
 An example usage of Node-Webkit and Edge.JS. This code calls a function inside
-a .NET class library from the DOM. 
+a .NET class library from the DOM.
 
 <img src="https://github.com/frankhale/nw-edge-example/blob/master/edge-test.png?raw=true" alt="screenshot"/>
 
 ###Usage
 
-You need Node-Webkit and Windows to run this.
+NOTE: Need [NW.js](http://nwjs.io/)?
 
 - Clone or download a zip of this repository
 - Unzip into it's own folder (assuming folder named edge-test-app)
-- Unzip node-webkit
-- Copy nw-edge-example folder to node-webkit folder
-- Open command prompt to node-webkit
+- Unzip NW.js
+- Copy nw-edge-example folder to NW.js folder
+- Open command prompt to the NW.js folder
+- Follow build instructions below to build the module
 - Run using the command: nw nw-edge-example
 
 ###C# Class Library
@@ -31,14 +32,14 @@ https://github.com/tjanczuk/edge
 
 ##Development
 
-###Building Your Own Edge.JS
+###Building Edge.JS for NW.js
 
 Edge.JS has to be rebuilt using nw-gyp in order for it to work from within
-Node-Webkit.
+NW.js.
 
 NOTE: By default Edge.JS is built using node-gyp and only works within Node.JS.
 
-Things you need in order to build Edge.JS yourself:
+Things you need in order to build Edge.JS for use within NW.js:
 
 - Visual Studio 2013
 - Python 2.7.x
