@@ -17,10 +17,6 @@ You need Node-Webkit and Windows to run this.
 - Open command prompt to node-webkit
 - Run using the command: nw nw-edge-example
 
-**NOTE: The Edge node module is included in the repo on purpose. If you are
-running x64 Windows you won't need to run any of the compile instructions below
-as the module has been compiled for NW 0.12.0 already.**
-
 ###C# Class Library
 
 The SimpleLibrary.dll is built from the Hello.cs source file. I've omitted the
