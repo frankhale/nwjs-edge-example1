@@ -1,6 +1,6 @@
 #nw-edge-example
 
-An example usage of Node-Webkit and Edge.JS. This code calls a function inside
+An example usage of NW.js and Edge.JS. This code calls a function inside
 a .NET class library from the DOM.
 
 <img src="https://github.com/frankhale/nw-edge-example/blob/master/edge-test.png?raw=true" alt="screenshot"/>
