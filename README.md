@@ -1,11 +1,26 @@
-#nw-edge-example
+#nwjs-edge-example
 
 An example usage of NW.js and Edge.JS. This code calls a function inside
 a .NET class library from the DOM.
 
-<img src="https://github.com/frankhale/nw-edge-example/blob/master/edge-test.png?raw=true" alt="screenshot"/>
+![NWJS-Edge-Example-Screenshot](screenshots/nwjs-edge-example.png)
 
-###Usage
+## Having Trouble Building Edge for NW.js?
+
+There are a lot of things that can go wrong preventing this example from
+working. For example, new NW.js builds containing Node versions that are not yet
+supported by Edge. Additionally getting a build environment setup on Windows can
+be challenging and difficult.
+
+If you cannot get Edge built to work directly in NW.js then you may want to look
+at my new example which demonstrates using Edge from NW.js via spawning a regular
+Node process and interacting with it via Socket.IO. This allows for shipping a
+known good version of Node that Edge supports while preventing the complexities
+of building Edge for NW.js.
+
+https://github.com/frankhale/nwjs-edge-example2
+
+## Usage
 
 NOTE: Need [NW.js](http://nwjs.io/)?
 
@@ -17,7 +32,7 @@ NOTE: Need [NW.js](http://nwjs.io/)?
 - Follow build instructions below to build the module
 - Run using the command: nw nw-edge-example
 
-###C# Class Library
+## C# Class Library
 
 The SimpleLibrary.dll is built from the Hello.cs source file. I've omitted the
 Visual Studio project to build this from this repository. This library only
@@ -30,9 +45,9 @@ repository located at:
 
 https://github.com/tjanczuk/edge
 
-##Development
+## Development
 
-###Building Edge.JS for NW.js
+### Building Edge.JS for NW.js
 
 Edge.JS has to be rebuilt using nw-gyp in order for it to work from within
 NW.js.
@@ -81,11 +96,11 @@ Copy edge_coreclr.node and edge_nativeclr to: (depending on your architecture, I
 c:\my-app\node_modules\edge\lib\native\win32\x64\5.1.0
 ```
 
-###Author
+## Author(s)
 
 Frank Hale &lt;frankhale@gmail.com&gt;  
-7 April 2016
+30 May 2016
 
-###License
+## License
 
-GPL version 3, see LICENSE file for details
+GNU GPL v3 - see [LICENSE](LICENSE)
