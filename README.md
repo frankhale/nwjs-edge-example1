@@ -1,4 +1,4 @@
-#nwjs-edge-example
+#nwjs-edge-example (Edge directly from DOM)
 
 An example usage of NW.js and Edge.JS. This code calls a function inside
 a .NET class library from the DOM.
